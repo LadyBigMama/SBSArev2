@@ -302,6 +302,39 @@ main {
   color: #1f3850;
 }
 
+.map-section {
+  margin-top: 40px;
+}
+
+.map-panel {
+  margin: 0;
+  padding: 18px;
+  border-radius: 18px;
+  border: 1px solid rgba(115, 155, 188, 0.32);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.97) 0%, rgba(242, 249, 255, 0.98) 100%);
+  box-shadow: var(--shadow);
+}
+
+.map-frame {
+  display: block;
+  width: 100%;
+  min-height: 720px;
+  border-radius: 12px;
+  border: 1px solid rgba(115, 155, 188, 0.3);
+  background: #ffffff;
+}
+
+.map-panel figcaption {
+  margin-top: 12px;
+  color: var(--muted);
+  text-align: center;
+}
+
+.map-panel figcaption a {
+  color: var(--accent-deep);
+  font-weight: 700;
+}
+
 code {
   background: #e8f4ff;
   border: 1px solid #c7def1;
@@ -579,6 +612,10 @@ footer p {
 
   .embed-frame {
     min-height: calc(100vh - 210px);
+  }
+
+  .map-frame {
+    min-height: 480px;
   }
 
   .topbar {
