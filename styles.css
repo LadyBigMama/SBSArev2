@@ -304,6 +304,9 @@ main {
 
 .map-section {
   margin-top: 40px;
+  width: min(100vw - 32px, 1440px);
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 
 .map-panel {
