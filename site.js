@@ -125,9 +125,44 @@
     });
   }
 
+  function ensureDisclaimerFooter() {
+    var footer = document.querySelector("footer");
+    var disclaimerTitle = "DISCLAIMER";
+    var disclaimerText = 'Last updated March 23, 2026. The information provided by Santa Barbara Soaring Association ("we," "us," or "our") on sbsa.info (the "Site") is for general informational purposes only. All information on the Site is provided in good faith, however we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the Site. UNDER NO CIRCUMSTANCE SHALL WE HAVE ANY LIABILITY TO YOU FOR ANY LOSS OR DAMAGE OF ANY KIND INCURRED AS A RESULT OF THE USE OF THE SITE OR RELIANCE ON ANY INFORMATION PROVIDED ON THE SITE. YOUR USE OF THE SITE AND YOUR RELIANCE ON ANY INFORMATION ON THE SITE IS SOLELY AT YOUR OWN RISK.';
+    var block;
+    var title;
+    var body;
+
+    if (!footer) {
+      footer = document.createElement("footer");
+      footer.className = "site-generated-footer";
+      document.body.appendChild(footer);
+    }
+
+    if (footer.querySelector(".site-disclaimer")) {
+      return;
+    }
+
+    block = document.createElement("section");
+    block.className = "site-disclaimer";
+
+    title = document.createElement("p");
+    title.className = "site-disclaimer-title";
+    title.textContent = disclaimerTitle;
+
+    body = document.createElement("p");
+    body.className = "site-disclaimer-body";
+    body.textContent = disclaimerText;
+
+    block.appendChild(title);
+    block.appendChild(body);
+    footer.appendChild(block);
+  }
+
   document.addEventListener("DOMContentLoaded", function() {
     bindFlyingSitesLinks();
     bindSiteCards();
     resetHomePageOnEntry();
+    ensureDisclaimerFooter();
   });
 }());
