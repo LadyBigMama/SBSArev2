@@ -392,6 +392,21 @@ footer p {
   font-family: "Avenir Next", "Trebuchet MS", "Gill Sans", sans-serif;
 }
 
+.site-detail-page,
+.site-detail-page p,
+.site-detail-page li,
+.site-detail-page a,
+.site-detail-page span,
+.site-detail-page b,
+.site-detail-page strong,
+.site-detail-page p.p1,
+.site-detail-page p.p2,
+.site-detail-page p.p3,
+.site-detail-page p.p4,
+.site-detail-page p.p5 {
+  font-family: "Avenir Next", "Trebuchet MS", "Gill Sans", sans-serif !important;
+}
+
 .site-detail-shell {
   max-width: 980px;
   margin: 16px auto 32px;
@@ -410,7 +425,6 @@ footer p {
 .site-detail-page li {
   font-size: 16px !important;
   line-height: 1.25 !important;
-  font-family: "Avenir Next", "Trebuchet MS", "Gill Sans", sans-serif !important;
 }
 
 .site-detail-page p b,
