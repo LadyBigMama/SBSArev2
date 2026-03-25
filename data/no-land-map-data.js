@@ -7,7 +7,8 @@ window.noLandMapData = {
   notes: [
     "This is the repo-owned replacement for the current Google My Maps embed.",
     "Edit polygon points, route points, and labels in this file to keep the map easy to update.",
-    "The current zone shapes are starter placeholders and should be replaced with real SBSA geometry."
+    "The current zone shapes are starter placeholders and should be replaced with real SBSA geometry.",
+    "Carpinteria polo fields are marked approximately based on the Santa Barbara Polo & Racquet Club area."
   ],
   zones: [
     {
@@ -35,6 +36,7 @@ window.noLandMapData = {
     { text: "Elings", x: 180, y: 560 },
     { text: "VOR", x: 710, y: 370 },
     { text: "The T", x: 360, y: 705 },
+    { text: "Polo Fields", x: 1160, y: 535, color: "#7a3e0d" },
     { text: "Replace With Real Zones", x: 860, y: 170, color: "#0b76b8" }
   ]
 };
