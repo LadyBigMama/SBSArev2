@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SBSA | No Land Map Builder</title>
+  <meta name="description" content="Repo-owned no-land map for SBSA, driven by editable local data.">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./site.js?v=20260325a" defer></script>
+  <script src="./data/no-land-map-data.js" defer></script>
+  <script src="./no-land-map.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./index.html">
+      <img src="./assets/sbsa-logo.webp" alt="SBSA logo">
+      <span>SBSA</span>
+    </a>
+    <nav class="topbar-nav">
+      <a href="./index.html#page-top">FLYING SITES</a>
+      <a href="./paragliding-pages-split/05-visiting-pilots.html">VISITING PILOTS</a>
+      <a href="./telegram.html">TELEGRAM</a>
+      <a href="./weather.html">WEATHER</a>
+      <a href="./sb-hoedown.html">SB HOEDOWN</a>
+      <a href="#">SCHOOLS</a>
+      <a href="./paragliding-pages-split/05-visiting-pilots.html">MEMBERSHIP</a>
+      <a href="./paragliding-pages-split/05-visiting-pilots.html">WAIVER</a>
+    </nav>
+  </header>
+
+  <main class="map-builder-shell">
+    <section class="map-builder-lead">
+      <p class="hero-kicker">SBSA Repo-Owned Map</p>
+      <h1>SBSA No Land Map Builder</h1>
+      <p>This page is driven entirely by local files in the repo. To update the map later, edit the zone and label data in <code>data/no-land-map-data.js</code>. No Google embed is required.</p>
+    </section>
+
+    <section class="map-builder-layout">
+      <article class="map-builder-panel">
+        <div class="map-builder-frame">
+          <svg id="no-land-map" class="map-builder-svg" viewBox="0 0 1400 900" role="img" aria-labelledby="no-land-map-title no-land-map-desc">
+            <title id="no-land-map-title">SBSA no land map</title>
+            <desc id="no-land-map-desc">Editable SVG map showing no-land zones and landmarks around Santa Barbara.</desc>
+            <image href="./assets/no-land-map-base.svg" width="1400" height="900" preserveAspectRatio="xMidYMid meet"></image>
+            <g id="no-land-zones"></g>
+            <g id="no-land-routes"></g>
+            <g id="no-land-labels"></g>
+          </svg>
+        </div>
+      </article>
+
+      <aside class="map-builder-sidebar">
+        <section class="map-builder-card">
+          <h2>How To Edit</h2>
+          <ol>
+            <li>Open <code>data/no-land-map-data.js</code>.</li>
+            <li>Edit the polygon points, route points, and label positions.</li>
+            <li>Adjust colors and notes in the same file.</li>
+            <li>When the geometry is finalized, replace the homepage iframe with this local map.</li>
+          </ol>
+        </section>
+
+        <section class="map-builder-card">
+          <h2>Legend</h2>
+          <div id="no-land-map-legend" class="map-builder-legend"></div>
+        </section>
+
+        <section class="map-builder-card">
+          <h2>Notes</h2>
+          <div id="no-land-map-notes" class="map-builder-notes"></div>
+        </section>
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    <p>Santa Barbara Soaring Association</p>
+    <p>Editable local map builder for no-land zones.</p>
+  </footer>
+</body>
+</html>

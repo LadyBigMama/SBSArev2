@@ -343,6 +343,118 @@ main {
   font-weight: 700;
 }
 
+.map-builder-shell {
+  max-width: min(96vw, 1600px);
+}
+
+.map-builder-lead {
+  margin-bottom: 22px;
+}
+
+.map-builder-lead h1 {
+  margin: 0;
+  color: var(--sky-700);
+  font-size: clamp(2rem, 3vw, 3rem);
+}
+
+.map-builder-lead p:last-child {
+  max-width: 72ch;
+  margin-top: 14px;
+}
+
+.map-builder-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.8fr) minmax(300px, 0.9fr);
+  gap: 20px;
+  align-items: start;
+}
+
+.map-builder-panel,
+.map-builder-card {
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: linear-gradient(180deg, #ffffff 0%, #f5fbff 100%);
+  box-shadow: var(--shadow);
+}
+
+.map-builder-panel {
+  padding: 16px;
+}
+
+.map-builder-frame {
+  overflow: hidden;
+  border-radius: 14px;
+  border: 1px solid rgba(115, 155, 188, 0.32);
+  background: #ffffff;
+}
+
+.map-builder-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+}
+
+.map-zone-shape {
+  transition: opacity 0.18s ease;
+}
+
+.map-zone-shape:hover {
+  opacity: 0.85;
+}
+
+.map-builder-sidebar {
+  display: grid;
+  gap: 18px;
+}
+
+.map-builder-card {
+  padding: 18px 20px;
+}
+
+.map-builder-card h2 {
+  margin: 0 0 12px;
+  color: var(--sky-700);
+}
+
+.map-builder-card ol,
+.map-builder-card ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.map-builder-card li + li {
+  margin-top: 8px;
+}
+
+.map-builder-legend {
+  display: grid;
+  gap: 10px;
+}
+
+.map-builder-legend-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.map-builder-swatch {
+  width: 18px;
+  height: 18px;
+  border-radius: 5px;
+  border: 1px solid rgba(17, 34, 51, 0.18);
+}
+
+.map-builder-notes p {
+  margin: 0;
+  color: #203850;
+  line-height: 1.55;
+}
+
+.map-builder-notes p + p {
+  margin-top: 10px;
+}
+
 code {
   background: #e8f4ff;
   border: 1px solid #c7def1;
@@ -800,6 +912,10 @@ footer p {
 
   .map-frame {
     min-height: 480px;
+  }
+
+  .map-builder-layout {
+    grid-template-columns: 1fr;
   }
 
   .topbar {
