@@ -210,11 +210,49 @@
     body.insertBefore(shell, footer || null);
   }
 
+  function enforceSiteDetailFont() {
+    var body = document.body;
+    var style;
+
+    if (!body || !body.classList.contains("site-detail-page")) {
+      return;
+    }
+
+    if (document.getElementById("site-detail-font-override")) {
+      return;
+    }
+
+    style = document.createElement("style");
+    style.id = "site-detail-font-override";
+    style.textContent = [
+      '.site-detail-page,',
+      '.site-detail-page p,',
+      '.site-detail-page li,',
+      '.site-detail-page a,',
+      '.site-detail-page span,',
+      '.site-detail-page b,',
+      '.site-detail-page strong,',
+      '.site-detail-page div,',
+      '.site-detail-page section,',
+      '.site-detail-page article,',
+      '.site-detail-page p.p1,',
+      '.site-detail-page p.p2,',
+      '.site-detail-page p.p3,',
+      '.site-detail-page p.p4,',
+      '.site-detail-page p.p5 {',
+      '  font-family: "Avenir Next", "Trebuchet MS", "Gill Sans", sans-serif !important;',
+      '}'
+    ].join('\n');
+
+    document.head.appendChild(style);
+  }
+
   document.addEventListener("DOMContentLoaded", function() {
     bindFlyingSitesLinks();
     bindSiteCards();
     resetHomePageOnEntry();
     wrapSiteDetailContent();
+    enforceSiteDetailFont();
     ensureDisclaimerFooter();
   });
 }());
