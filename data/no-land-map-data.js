@@ -36,7 +36,16 @@ window.noLandMapData = {
     { text: "Elings", x: 180, y: 560 },
     { text: "VOR", x: 710, y: 370 },
     { text: "The T", x: 360, y: 705 },
-    { text: "Polo Fields", x: 1160, y: 535, color: "#7a3e0d" },
+    {
+      text: "Polo Fields",
+      x: 1160,
+      y: 535,
+      color: "#7a3e0d",
+      marker: true,
+      markerRadius: 12,
+      markerFill: "#d9742e",
+      markerStroke: "#fff4d6"
+    },
     { text: "Replace With Real Zones", x: 860, y: 170, color: "#0b76b8" }
   ]
 };

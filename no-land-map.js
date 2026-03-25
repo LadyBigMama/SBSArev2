@@ -103,6 +103,7 @@
       var group = createSvgNode("g", {
         transform: "translate(" + label.x + " " + label.y + ")"
       });
+      var marker;
       var bg = createSvgNode("rect", {
         x: "-12",
         y: "-34",
@@ -121,6 +122,18 @@
         "font-size": label.size || "24",
         "font-weight": label.weight || "700"
       });
+
+      if (label.marker) {
+        marker = createSvgNode("circle", {
+          cx: "-28",
+          cy: "-13",
+          r: label.markerRadius || "10",
+          fill: label.markerFill || "#d9742e",
+          stroke: label.markerStroke || "#ffffff",
+          "stroke-width": label.markerStrokeWidth || "4"
+        });
+        group.appendChild(marker);
+      }
 
       text.textContent = label.text;
       group.appendChild(bg);
