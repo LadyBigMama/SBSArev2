@@ -410,6 +410,7 @@ footer p {
 .site-detail-page li {
   font-size: 16px !important;
   line-height: 1.25 !important;
+  font-family: "Avenir Next", "Trebuchet MS", "Gill Sans", sans-serif !important;
 }
 
 .site-detail-page p b,
