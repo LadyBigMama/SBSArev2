@@ -37,7 +37,7 @@ window.noLandMapData = {
     { text: "VOR", x: 710, y: 370 },
     { text: "The T", x: 360, y: 705 },
     {
-      text: "Polo Fields",
+      text: "Santa Barbara Polo and Racket Club",
       x: 1160,
       y: 535,
       color: "#7a3e0d",
