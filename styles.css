@@ -420,6 +420,20 @@ footer p {
   color: var(--muted);
 }
 
+.telegram-mobile-fallback {
+  display: none;
+  padding: 18px 16px;
+  text-align: center;
+}
+
+.telegram-mobile-fallback p {
+  margin: 0;
+}
+
+.telegram-mobile-fallback .btn {
+  margin-top: 16px;
+}
+
 .site-generated-footer {
   margin-top: 28px;
 }
@@ -765,6 +779,19 @@ footer p {
   .telegram-shell {
     width: 100vw;
     padding: 8px 0 20px;
+  }
+
+  .telegram-mobile-fallback {
+    display: block;
+  }
+
+  .telegram-frame-large {
+    display: none;
+  }
+
+  .telegram-note {
+    text-align: center;
+    margin-top: 6px;
   }
 
   .telegram-frame-large {
