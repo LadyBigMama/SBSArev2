@@ -2,7 +2,7 @@ EJ
 
 Primary launch in Santa Barbara for thermal flying
 
-Rating: P3 or supervised P2
+Rating: P3/H3+ or Supervised P2
 Main radio Frequency: 144.310
 Altitude: 3750ft
 Wind direction: SSE to SW.
