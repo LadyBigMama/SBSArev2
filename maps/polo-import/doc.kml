@@ -3,7 +3,7 @@
   <Document>
     <name>Santa Barbara Polo &amp; Racquet Club No Landing</name>
 
-    <Style id="icon-red-x">
+    <Style id="icon-1898-FF5252-labelson">
       <IconStyle>
         <scale>1</scale>
         <Icon>
@@ -12,22 +12,45 @@
       </IconStyle>
     </Style>
 
-    <Style id="poly-red-normal">
+    <Style id="poly-E65100-1200-77-normal">
       <LineStyle>
         <color>ff0051e6</color>
-        <width>3</width>
+        <width>1.2</width>
       </LineStyle>
       <PolyStyle>
-        <color>260051e6</color>
+        <color>4d0051e6</color>
         <fill>1</fill>
         <outline>1</outline>
       </PolyStyle>
     </Style>
 
+    <Style id="poly-E65100-1200-77-highlight">
+      <LineStyle>
+        <color>ff0051e6</color>
+        <width>1.8</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4d0051e6</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+
+    <StyleMap id="poly-E65100-1200-77">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-E65100-1200-77-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-E65100-1200-77-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+
     <Placemark>
       <name>No Landing Zone</name>
       <description>Santa Barbara Polo &amp; Racquet Club</description>
-      <styleUrl>#poly-red-normal</styleUrl>
+      <styleUrl>#poly-E65100-1200-77</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -58,7 +81,7 @@
     <Placemark>
       <name>NoLZ Polo Club</name>
       <description>Santa Barbara Polo &amp; Racquet Club</description>
-      <styleUrl>#icon-red-x</styleUrl>
+      <styleUrl>#icon-1898-FF5252-labelson</styleUrl>
       <Point>
         <coordinates>-119.56381,34.41925,0</coordinates>
       </Point>
