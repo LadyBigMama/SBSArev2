@@ -4,7 +4,7 @@ Primary launch for Thermal Flying and first mountain flight -Update date-
 Minimum Rating: P2+
 Main Radio Frequency: 144.310
 Appropriate wind: SE to SSW
-Altitude: 3533ft
+Elevation: 3533ft
 Minimum glide ratio: 6:1
 
 Because the LZ is located within the Santa Barbara Airport Airspace, flying this site requires opening the Airspace Window with the Santa Barbara Airport Control Tower. This will notify airplane pilots that there is paragliding and hang gliding activities in the area. The control tower staff is very busy, so we want to avoid redundant calls. First call the ATIS report line (recorded message) at (805) 967—0283 to check if they report soaring activities. If they do not, post on the SBSA Telegram group chat, requesting that “the mountain window be opened for flying”. Someone from the community will call the airport control tower to report soaring activity and will let everyone know on the chat.

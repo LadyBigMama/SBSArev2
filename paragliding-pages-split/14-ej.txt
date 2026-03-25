@@ -4,7 +4,7 @@ Primary launch in Santa Barbara for thermal flying
 
 Rating: P3/H3+ or Supervised P2
 Main radio Frequency: 144.310
-Altitude: 3750ft
+Elevation: 3750ft
 Wind direction: SSE to SW.
 Glide ratio needed to Parma: 6:1
 

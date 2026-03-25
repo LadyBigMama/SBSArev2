@@ -8,7 +8,7 @@ Thermal Flying with some ridge soaring
 Rating: P4
 Appropriate winds: SE
 Radio Frequency: 144.310
-Altitude: 3632ft
+Elevation: 3632ft
 
 
 Used occasionally as an alternative launch by experienced pilots in strong South East. 
