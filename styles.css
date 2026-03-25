@@ -309,7 +309,7 @@ main {
 
 .map-section {
   margin-top: 40px;
-  width: min(100vw - 32px, 1440px);
+  width: min(100vw - 32px, 720px);
   margin-left: 50%;
   transform: translateX(-50%);
 }
@@ -326,7 +326,7 @@ main {
 .map-frame {
   display: block;
   width: 100%;
-  min-height: 720px;
+  min-height: 360px;
   border-radius: 12px;
   border: 1px solid rgba(115, 155, 188, 0.3);
   background: #ffffff;
@@ -911,7 +911,7 @@ footer p {
   }
 
   .map-frame {
-    min-height: 480px;
+    min-height: 280px;
   }
 
   .map-builder-layout {
