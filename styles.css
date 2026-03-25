@@ -392,6 +392,20 @@ footer p {
   font-family: "Avenir Next", "Trebuchet MS", "Gill Sans", sans-serif;
 }
 
+.site-detail-shell {
+  max-width: 980px;
+  margin: 16px auto 32px;
+  padding: 0 14px;
+}
+
+.site-detail-card {
+  padding: 18px 20px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid #c9d8e8;
+  box-shadow: 0 10px 24px rgba(11, 45, 77, 0.1);
+}
+
 .site-detail-page p,
 .site-detail-page li {
   font-size: 16px !important;
