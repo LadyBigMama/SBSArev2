@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Santa Barbara Polo &amp; Racquet Club</name>
+    <Placemark>
+      <name>Santa Barbara Polo &amp; Racquet Club</name>
+      <description>3300 Via Real, Carpinteria, CA 93013</description>
+      <Point>
+        <coordinates>-119.56381,34.41925,0</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

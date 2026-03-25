@@ -3,6 +3,7 @@
 This folder contains an importable Google My Maps source file:
 
 - `sbsa-no-land-zones.kml`
+- `santa-barbara-polo-racquet-club.kml`
 
 It was extracted from the current public SBSA no-land map and contains:
 
@@ -15,10 +16,11 @@ It was extracted from the current public SBSA no-land map and contains:
 2. Create a new map.
 3. Click `Import` on the first layer.
 4. Upload `maps/sbsa-no-land-zones.kml`.
-5. Rename the map and layer as needed.
-6. Add any missing labels, colors, or red X icons directly in your own map.
-7. Set sharing to the visibility you want.
-8. Use your new map's embed URL on the website.
+5. If you want the polo club landmark too, import `maps/santa-barbara-polo-racquet-club.kml` into a new or existing layer.
+6. Rename the map and layer as needed.
+7. Add any missing labels, colors, or red X icons directly in your own map.
+8. Set sharing to the visibility you want.
+9. Use your new map's embed URL on the website.
 
 ## Notes
 
