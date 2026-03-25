@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Santa Barbara Polo &amp; Racquet Club No Landing</name>
+
+    <Style id="icon-red-x">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-1.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+
+    <Style id="poly-red-normal">
+      <LineStyle>
+        <color>ff0051e6</color>
+        <width>3</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>260051e6</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+
+    <Placemark>
+      <name>No Landing Zone</name>
+      <description>Santa Barbara Polo &amp; Racquet Club</description>
+      <styleUrl>#poly-red-normal</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <tessellate>1</tessellate>
+            <coordinates>
+              -119.5607467,34.4165239,0
+              -119.5636020,34.4168131,0
+              -119.5652315,34.4169928,0
+              -119.5653199,34.4187846,0
+              -119.5668188,34.4187967,0
+              -119.5670236,34.4219231,0
+              -119.5629381,34.4219679,0
+              -119.5616780,34.4219733,0
+              -119.5612907,34.4219074,0
+              -119.5611998,34.4218488,0
+              -119.5611136,34.4216584,0
+              -119.5610511,34.4206397,0
+              -119.5608751,34.4195938,0
+              -119.5607168,34.4180848,0
+              -119.5606044,34.4166243,0
+              -119.5607467,34.4165239,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>NoLZ Polo Club</name>
+      <description>Santa Barbara Polo &amp; Racquet Club</description>
+      <styleUrl>#icon-red-x</styleUrl>
+      <Point>
+        <coordinates>-119.56381,34.41925,0</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>
