@@ -8,12 +8,14 @@ Altitude: 3750ft
 Wind direction: SSE to SW.
 Glide ratio needed to Parma: 6:1
 
+CARD 2: Launch
 Large rocky dirt launch with a wind sock and streamers.
 
 Possibility to launch OTB, but beware of turbulence through the venturi on your way to the South facing slope.
 
 If you're going XC, you should install our DNL file. It is sensitive and only shared with visitors upon request - hop on Telegram, introduce yourself and someone will gladly share it with you.
 
+CARD 3: Roundhouse Guidance
 The Roundhouse is located on the SW point of the front ridge on your way from Eliminator/Skyport to Parma LZ.
 The owners of the Round House live there as a primary residence. They insist that we respect their privacy. They do not want the perception that pilots may be peeping through their windows. In the interest of being good neighbors, we have agreed upon the following guidelines:
 When possible, stay 500 feet horizontally and 200 feet vertically clear of the Round House.
