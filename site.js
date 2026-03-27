@@ -316,12 +316,60 @@
     container.appendChild(card);
   }
 
+  function ensureSpecWindowMedia() {
+    var body = document.body;
+    var path = window.location.pathname || "";
+    var file = path.split("/").pop();
+    var firstCard;
+    var media;
+    var imageMap = {
+      "06-jays-knob.html": { src: "../assets/jays-knob.jpg", alt: "Jay's Knob" },
+      "09-bates.html": { src: "../assets/bates-launch.jpg", alt: "Bates launch" },
+      "11-east-beach-landing.html": { src: "../assets/east-beach.jpg", alt: "East Beach" },
+      "14-ej.html": { src: "../assets/ej-launch.jpg", alt: "EJ launch" },
+      "15-pine-mountain.html": { src: "../assets/pine-mountain.jpg", alt: "Pine Mountain" }
+    };
+    var placeholderLabelMap = {
+      "01-the-t-at-the-san-marcos-preserve.html": "The T at the San Marcos Preserve",
+      "04-parma.html": "Parma",
+      "08-marco-polo-toro-ridge.html": "Marco Polo - Toro Ridge",
+      "12-wilcox-douglas-family-preserve.html": "Wilcox / Douglas Family Preserve",
+      "13-more-mesa.html": "More Mesa",
+      "16-the-nuthouse.html": "The Nuthouse"
+    };
+
+    if (!body || !body.classList.contains("site-detail-page")) {
+      return;
+    }
+
+    firstCard = document.querySelector(".vor-shell .vor-card, .elings-shell .elings-card, .skyport-shell .skyport-card, .marco-shell .marco-card, .ej-shell .ej-card, .site-detail-shell .site-detail-card");
+
+    if (!firstCard || firstCard.querySelector("img")) {
+      return;
+    }
+
+    if (imageMap[file]) {
+      media = document.createElement("img");
+      media.className = "spec-window-media";
+      media.src = imageMap[file].src;
+      media.alt = imageMap[file].alt;
+      firstCard.insertBefore(media, firstCard.firstChild);
+      return;
+    }
+
+    media = document.createElement("div");
+    media.className = "spec-window-placeholder";
+    media.innerHTML = "<div><strong>Photo Pending</strong><span>" + (placeholderLabelMap[file] || "Site image coming soon") + "</span></div>";
+    firstCard.insertBefore(media, firstCard.firstChild);
+  }
+
   document.addEventListener("DOMContentLoaded", function() {
     bindFlyingSitesLinks();
     bindSiteCards();
     resetHomePageOnEntry();
     wrapSiteDetailContent();
     enforceSiteDetailFont();
+    ensureSpecWindowMedia();
     ensureLocalPilotNote();
     ensureDisclaimerFooter();
   });

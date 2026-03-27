@@ -631,6 +631,45 @@ footer p {
   line-height: 1.35;
 }
 
+.spec-window-media {
+  display: block;
+  width: 100%;
+  aspect-ratio: 2811 / 1412;
+  object-fit: cover;
+  object-position: center;
+  margin: 0 0 16px;
+  border-radius: 12px;
+  border: 1px solid #c9d8e8;
+  background: #d7e4ef;
+}
+
+.spec-window-placeholder {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  aspect-ratio: 2811 / 1412;
+  margin: 0 0 16px;
+  border-radius: 12px;
+  border: 1px dashed #8da7bc;
+  background:
+    linear-gradient(180deg, rgba(227, 241, 250, 0.95) 0%, rgba(202, 224, 239, 0.98) 100%);
+  color: #23445f;
+  text-align: center;
+}
+
+.spec-window-placeholder strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.spec-window-placeholder span {
+  display: block;
+  font-size: 0.95rem;
+}
+
 .weather-hero {
   position: relative;
   isolation: isolate;
