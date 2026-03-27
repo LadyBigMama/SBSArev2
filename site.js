@@ -56,18 +56,23 @@
     var links = document.querySelectorAll(".topbar-nav a");
 
     links.forEach(function(link) {
+      var targetPath;
+      var currentPath;
+
       if (link.textContent.trim() !== "FLYING SITES") {
         return;
       }
+
+      targetPath = new URL(getHomeUrl(link), window.location.href).pathname;
+      currentPath = window.location.pathname;
 
       link.addEventListener("click", function(event) {
         if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) {
           return;
         }
 
-        event.preventDefault();
-
-        if (isHomePage()) {
+        if (isHomePage() && targetPath === currentPath) {
+          event.preventDefault();
           forceTopScroll();
           window.setTimeout(function() {
             clearHomeUrl();
@@ -75,7 +80,10 @@
           return;
         }
 
-        window.location.href = getHomeUrl(link) + "?navtop=" + Date.now();
+        if (targetPath === currentPath) {
+          event.preventDefault();
+          window.location.href = getHomeUrl(link) + "?navtop=" + Date.now();
+        }
       });
     });
   }

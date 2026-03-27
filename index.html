@@ -3,40 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SBSA | Santa Barbara Flying Sites</title>
-  <meta name="description" content="Santa Barbara Soaring Association site guide for launches, landing zones, and local flying resources.">
+  <title>SBSA | Santa Barbara Soaring Association</title>
+  <meta name="description" content="Santa Barbara Soaring Association homepage with calendar, community links, and upcoming event placeholders.">
   <link rel="stylesheet" href="./styles.css">
-  <script>
-    (function() {
-      var url = new URL(window.location.href);
-      var legacyHash = url.hash === "#site-grid" || url.hash === "#page-top";
-      var hasNavTop = url.searchParams.has("navtop");
-
-      if (!legacyHash && !hasNavTop) {
-        return;
-      }
-
-      if ("scrollRestoration" in history) {
-        history.scrollRestoration = "manual";
-      }
-
-      url.hash = "";
-      url.searchParams.delete("navtop");
-      history.replaceState(null, "", url.pathname + (url.searchParams.toString() ? "?" + url.searchParams.toString() : ""));
-      window.scrollTo(0, 0);
-    }());
-  </script>
-  <script src="./site.js?v=20260327d" defer></script>
+  <script src="./site.js?v=20260327e" defer></script>
 </head>
 <body data-page="home">
-  <div id="page-top" aria-hidden="true"></div>
   <header class="topbar">
     <a class="brand" href="./index.html">
       <img src="./assets/sbsa-logo.webp" alt="SBSA logo">
       <span>SBSA</span>
     </a>
     <nav class="topbar-nav">
-      <a href="./index.html#page-top">FLYING SITES</a>
+      <a href="./paragliding-pages-split/10-flying-sites-in-santa-barbara.html">FLYING SITES</a>
       <a href="./paragliding-pages-split/05-visiting-pilots.html">VISITING PILOTS</a>
       <a href="./telegram.html">TELEGRAM</a>
       <a href="./weather.html">WEATHER</a>
@@ -46,220 +25,120 @@
     </nav>
   </header>
 
-  <section class="hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-mountains"></div>
-    <div class="hero-content">
-      <p class="hero-kicker">Santa Barbara Soaring Association</p>
-      <h1>Your Flying Adventure Awaits</h1>
-      <p>Please take the time prior to flying SB sites to regularly review the site guidelines along with the no landing zone map. These can change over time and it is important to review the latest updates. Please adhere to these guidelines and plan flights accordingly.</p>
+  <section class="home-hero">
+    <div class="home-hero-overlay"></div>
+    <div class="home-hero-grid">
+      <div class="home-hero-copy">
+        <p class="hero-kicker">Santa Barbara Soaring Association</p>
+        <h1>Santa Barbara pilots, sites, weather, and community in one place.</h1>
+        <p>Use this homepage to see what is happening, jump into the calendar, and find the core links people actually need before heading to launch.</p>
+        <div class="home-hero-actions">
+          <a class="btn" href="./paragliding-pages-split/10-flying-sites-in-santa-barbara.html">Browse Flying Sites</a>
+          <a class="btn btn-secondary" href="#calendar">Open Calendar</a>
+          <a class="btn btn-secondary" href="./telegram.html">Join Telegram</a>
+        </div>
+      </div>
+
+      <aside class="home-hero-panel">
+        <p class="home-panel-kicker">Right Now</p>
+        <h2>Community Home Base</h2>
+        <p>Check the calendar, review the site guides, and use Telegram to coordinate with local pilots before flying.</p>
+        <ul class="home-panel-list">
+          <li>Flying site directory and local rules</li>
+          <li>Weather tools and no-land-zone references</li>
+          <li>Upcoming event placeholders ready to fill in</li>
+        </ul>
+      </aside>
     </div>
   </section>
 
-  <main>
-    <section class="site-section" id="site-grid">
+  <main class="home-main">
+    <section class="home-section">
       <div class="section-header">
-        <h2>Primary Sites</h2>
-        <p>Main SBSA launch and landing locations.</p>
+        <h2>Start Here</h2>
+        <p>Quick access to the parts of the site people use most.</p>
       </div>
-      <div class="site-grid">
-        <article class="site-card">
-          <a class="site-image" href="./paragliding-pages-split/03-elings-flight-park.html">
-            <img src="./assets/elings-flight-park.jpg" alt="Elings Flight Park">
-          </a>
-          <div class="site-body">
-            <h3>Elings Flight Park</h3>
-            <p>Training hill, ground handling, and some thermal flying.</p>
-            <p class="site-meta">Rating: P1/H1 with instructor supervision, P2+/H2+ with school present</p>
-          </div>
-        </article>
+      <div class="home-link-grid">
+        <a class="home-link-card" href="./paragliding-pages-split/10-flying-sites-in-santa-barbara.html">
+          <strong>Flying Sites</strong>
+          <span>Launches, LZs, site notes, and the no-land-fields map.</span>
+        </a>
+        <a class="home-link-card" href="./weather.html">
+          <strong>Weather</strong>
+          <span>Forecast tools, tower checks, buoy data, and planning links.</span>
+        </a>
+        <a class="home-link-card" href="./telegram.html">
+          <strong>Telegram</strong>
+          <span>See the live community page and coordinate with local pilots.</span>
+        </a>
+        <a class="home-link-card" href="./paragliding-pages-split/05-visiting-pilots.html">
+          <strong>Visiting Pilots</strong>
+          <span>Membership, waiver, local guidance, and visitor basics.</span>
+        </a>
       </div>
     </section>
 
-    <section class="site-section">
+    <section class="home-section" id="calendar">
       <div class="section-header">
-        <h2>Backcountry sites - undeveloped but associated with SBSA.</h2>
+        <h2>Calendar</h2>
+        <p>SBSA community calendar.</p>
       </div>
-      <div class="site-grid">
-        <article class="site-card">
-          <a class="site-image" href="./paragliding-pages-split/02-vor-first-student-mountain-flights-to-epic-xc.html">
-            <img src="./assets/VOR.jpeg" alt="VOR launch">
-          </a>
-          <div class="site-body">
-            <h3>VOR</h3>
-            <p>Main mountain launch for first mountain flights and XC.</p>
-            <p class="site-meta">Minimum: P2+</p>
-          </div>
-        </article>
-
-        <article class="site-card">
-          <a class="site-image" href="./paragliding-pages-split/01-the-t-at-the-san-marcos-preserve.html">
-            <img src="./assets/site-placeholder.svg" alt="The T site photo placeholder">
-          </a>
-          <div class="site-body">
-            <h3>The T at San Marcos Preserve</h3>
-            <p>Official landing site for VOR mountain flights.</p>
-            <p class="site-meta">Rating: P1 (supervised), P2+</p>
-          </div>
-        </article>
-
-        <article class="site-card">
-          <a class="site-image" href="./paragliding-pages-split/14-ej.html">
-            <img src="./assets/ej-launch.jpg" alt="EJ launch">
-          </a>
-          <div class="site-body">
-            <h3>EJ</h3>
-            <p>Primary Santa Barbara launch for thermal flying.</p>
-            <p class="site-meta">Minimum: P3/H3+ or Supervised P2</p>
-          </div>
-        </article>
-
-        <article class="site-card">
-          <a class="site-image" href="./paragliding-pages-split/07-skyport-eliminator.html">
-            <img src="./assets/skyport-launch.jpg" alt="Skyport / Eliminator">
-          </a>
-          <div class="site-body">
-            <h3>Skyport / Eliminator</h3>
-            <p>Lower launch protected from North winds.</p>
-            <p class="site-meta">Minimum: P3+ / H3+ (or supervised)</p>
-          </div>
-        </article>
-
-        <article class="site-card">
-          <a class="site-image" href="./paragliding-pages-split/08-marco-polo-toro-ridge.html">
-            <img src="./assets/site-placeholder.svg" alt="Marco Polo photo placeholder">
-          </a>
-          <div class="site-body">
-            <h3>Marco Polo - Toro Ridge</h3>
-            <p>Thermal and ridge option in Carpinteria.</p>
-            <p class="site-meta">Rating: P2 (with instructor) or P3+</p>
-          </div>
-        </article>
-
-        <article class="site-card">
-          <a class="site-image" href="./paragliding-pages-split/15-pine-mountain.html">
-            <img src="./assets/pine-mountain.jpg" alt="Pine Mountain">
-          </a>
-          <div class="site-body">
-            <h3>Pine Mountain</h3>
-            <p>Secondary mountain site. Details pending.</p>
-            <p class="site-meta">Info only</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="site-section">
-      <div class="section-header">
-        <h2>Secondary sites for info only - unassociated with SBSA.<br>Not maintained by SBSA. Fly at your own risk.</h2>
-      </div>
-      <div class="site-grid">
-        <article class="site-card">
-          <a class="site-image" href="./paragliding-pages-split/11-east-beach-landing.html">
-            <img src="./assets/east-beach.jpg" alt="East Beach">
-          </a>
-          <div class="site-body">
-            <h3>East Beach</h3>
-            <p>Designated beach landing area inside Santa Barbara limits.</p>
-            <p class="site-meta">Rating: H4 / P4</p>
-          </div>
-        </article>
-
-        <article class="site-card">
-          <a class="site-image" href="./paragliding-pages-split/12-wilcox-douglas-family-preserve.html">
-            <img src="./assets/site-placeholder.svg" alt="Wilcox photo placeholder">
-          </a>
-          <div class="site-body">
-            <h3>Wilcox / Douglas Preserve</h3>
-            <p>Coastal ridge soaring in the Douglas Preserve. Lots of dogs!</p>
-            <p class="site-meta">Rating: H4 / P4</p>
-          </div>
-        </article>
-
-        <article class="site-card">
-          <a class="site-image" href="./paragliding-pages-split/13-more-mesa.html">
-            <img src="./assets/site-placeholder.svg" alt="More Mesa photo placeholder">
-          </a>
-          <div class="site-body">
-            <h3>More Mesa</h3>
-            <p>Ridge Soaring within SB Airport Airspace.</p>
-            <p class="site-meta">Rating: P2+</p>
-          </div>
-        </article>
-
-        <article class="site-card">
-          <a class="site-image" href="./paragliding-pages-split/09-bates.html">
-            <img src="./assets/bates-launch.jpg" alt="Bates launch">
-          </a>
-          <div class="site-body">
-            <h3>Bates</h3>
-            <p>Carpinteria coastal ridge soaring site for all levels.</p>
-            <p class="site-meta">Rating: P2 / H2</p>
-          </div>
-        </article>
-
-        <article class="site-card">
-          <a class="site-image" href="./paragliding-pages-split/06-jays-knob.html">
-            <img src="./assets/jays-knob.jpg" alt="Jay's Knob">
-          </a>
-          <div class="site-body">
-            <h3>Jay's Knob</h3>
-            <p>Occasional experienced pilot site in stronger SE setups.</p>
-            <p class="site-meta">Rating: P4</p>
-          </div>
-        </article>
-
-        <article class="site-card">
-          <a class="site-image" href="./paragliding-pages-split/04-parma.html">
-            <img src="./assets/site-placeholder.svg" alt="Parma photo placeholder">
-          </a>
-          <div class="site-body">
-            <h3>Parma</h3>
-            <p>LZ at the foothill of Skyport</p>
-            <p class="site-meta">Rating: P2 / H2</p>
-          </div>
-        </article>
-
-        <article class="site-card">
-          <a class="site-image" href="./paragliding-pages-split/16-the-nuthouse.html">
-            <img src="./assets/site-placeholder.svg" alt="The Nuthouse photo placeholder">
-          </a>
-          <div class="site-body">
-            <h3>The Nuthouse</h3>
-            <p>Ojai thermal flying site. Details pending.</p>
-            <p class="site-meta">Info only</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="site-section map-section" aria-labelledby="no-land-fields-title">
-      <div class="section-header">
-        <h2 id="no-land-fields-title">SBSA No Land Fields</h2>
-        <p>Reference map for restricted no-land areas around Santa Barbara flying routes.</p>
-      </div>
-      <figure class="map-panel">
+      <div class="home-calendar-panel">
         <iframe
-          class="map-frame"
-          src="https://www.google.com/maps/d/u/0/embed?mid=12QO5gxY05rWs8dJeDoGy2_fN0kNa3RQ"
-          title="SBSA No Land Fields map"
+          class="home-calendar-frame"
+          src="https://calendar.google.com/calendar/u/2/r"
+          title="SBSA Google Calendar"
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade">
         </iframe>
-        <figcaption>
-          Interactive no-land-zone map. Open it directly in
-          <a href="https://www.google.com/maps/d/u/0/edit?mid=12QO5gxY05rWs8dJeDoGy2_fN0kNa3RQ" target="_blank" rel="noreferrer noopener">Google My Maps</a>
-          or
-          <a href="https://earth.google.com/web/@34.44567406,-119.60031211,164.80148832a,41826.29728801d,30.00003175y,0h,0t,0r/data=CgRCAggBMigKJgokCiAxMlFPNWd4WTA1cldzOGRKZURvR3kyX2ZOMGtOYTNSUSACOgMKATBCAggASggI0tnvmAQQAQ?authuser=0&utm_source=mymaps" target="_blank" rel="noreferrer noopener">Google Earth</a>.
-        </figcaption>
-      </figure>
+        <p class="home-calendar-note">If Google blocks the embedded view, open it directly in <a href="https://calendar.google.com/calendar/u/2/r" target="_blank" rel="noreferrer noopener">Google Calendar</a>.</p>
+      </div>
     </section>
 
+    <section class="home-section">
+      <div class="section-header">
+        <h2>Upcoming Events</h2>
+        <p>Placeholders ready for real event details.</p>
+      </div>
+      <div class="home-event-grid">
+        <article class="home-event-card">
+          <p class="home-event-kicker">Placeholder</p>
+          <h3>Big Sur</h3>
+          <p>Event details coming soon. Use this block for dates, meeting point, logistics, and sign-up instructions.</p>
+        </article>
+        <article class="home-event-card">
+          <p class="home-event-kicker">Placeholder</p>
+          <h3>Dunlap</h3>
+          <p>Event details coming soon. This space is ready for travel notes, pilot requirements, and coordination info.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="home-section">
+      <div class="section-header">
+        <h2>What Belongs Here</h2>
+        <p>The homepage should help people orient quickly before they dive deeper.</p>
+      </div>
+      <div class="home-info-grid">
+        <article class="home-info-card">
+          <h3>For Members</h3>
+          <p>Use the homepage to keep current links visible: calendar, Telegram, weather, waiver, and event announcements.</p>
+        </article>
+        <article class="home-info-card">
+          <h3>For Visitors</h3>
+          <p>Make it obvious where to start: Visiting Pilots, Flying Sites, current rules, and how to contact locals.</p>
+        </article>
+        <article class="home-info-card">
+          <h3>For Events</h3>
+          <p>Keep major trips and gatherings visible here first, then link out to full detail pages when they exist.</p>
+        </article>
+      </div>
+    </section>
   </main>
 
   <footer>
     <p>Santa Barbara Soaring Association</p>
-    <p>Site guides for local pilots and visitors.</p>
+    <p>Community information, local flying resources, and event updates.</p>
   </footer>
 </body>
 </html>
