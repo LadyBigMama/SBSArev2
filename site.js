@@ -266,7 +266,7 @@
       return;
     }
 
-    if (file === "05-visiting-pilots.html" || file === "10-flying-sites-in-santa-barbara.html") {
+    if (file === "03-elings-flight-park.html" || file === "05-visiting-pilots.html" || file === "10-flying-sites-in-santa-barbara.html") {
       return;
     }
 
