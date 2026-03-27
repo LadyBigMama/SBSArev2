@@ -342,6 +342,10 @@
       return;
     }
 
+    if (file === "05-visiting-pilots.html" || file === "10-flying-sites-in-santa-barbara.html") {
+      return;
+    }
+
     firstCard = document.querySelector(".vor-shell .vor-card, .elings-shell .elings-card, .skyport-shell .skyport-card, .marco-shell .marco-card, .ej-shell .ej-card, .site-detail-shell .site-detail-card");
 
     if (!firstCard || firstCard.querySelector("img")) {
