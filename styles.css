@@ -600,22 +600,11 @@ footer p {
 }
 
 .site-detail-card {
-  padding: 0;
-  border-radius: 0;
-  background: transparent;
-  border: 0;
-  box-shadow: none;
-}
-
-.vor-card,
-.elings-card,
-.skyport-card,
-.marco-card,
-.ej-card {
-  background: transparent !important;
-  border: 0 !important;
-  box-shadow: none !important;
-  padding: 0 !important;
+  padding: 18px 20px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid #c9d8e8;
+  box-shadow: 0 10px 24px rgba(11, 45, 77, 0.1);
 }
 
 .site-detail-page p,
