@@ -247,12 +247,82 @@
     document.head.appendChild(style);
   }
 
+  function ensureLocalPilotNote() {
+    var body = document.body;
+    var path = window.location.pathname || "";
+    var file = path.split("/").pop();
+    var container;
+    var card;
+    var paragraph;
+    var cardClass = "";
+    var tagName = "section";
+    var noteHtml = 'Like for all our other sites, due to the sensitive nature of flying over Santa Barbara, out-of-town pilots are advised to <b>contact an experienced local pilot</b> to get a site intro in addition to this page.';
+
+    if (!body || !body.classList.contains("site-detail-page")) {
+      return;
+    }
+
+    if (path.indexOf("/paragliding-pages-split/") === -1) {
+      return;
+    }
+
+    if (file === "05-visiting-pilots.html" || file === "10-flying-sites-in-santa-barbara.html") {
+      return;
+    }
+
+    if (body.textContent.indexOf("Like for all our other sites, due to the sensitive nature of flying over Santa Barbara, out-of-town pilots are advised to contact an experienced local pilot to get a site intro in addition to this page.") !== -1) {
+      return;
+    }
+
+    if (document.querySelector(".local-pilot-note-card")) {
+      return;
+    }
+
+    if (document.querySelector(".vor-shell")) {
+      container = document.querySelector(".vor-shell");
+      cardClass = "vor-card";
+    } else if (document.querySelector(".elings-shell")) {
+      container = document.querySelector(".elings-shell");
+      cardClass = "elings-card";
+    } else if (document.querySelector(".skyport-shell")) {
+      container = document.querySelector(".skyport-shell");
+      cardClass = "skyport-card";
+    } else if (document.querySelector(".marco-shell")) {
+      container = document.querySelector(".marco-shell");
+      cardClass = "marco-card";
+    } else if (document.querySelector(".ej-shell")) {
+      container = document.querySelector(".ej-shell");
+      cardClass = "ej-card";
+    } else if (document.querySelector(".site-detail-shell")) {
+      container = document.querySelector(".site-detail-shell");
+      cardClass = "site-detail-card";
+      tagName = "article";
+    }
+
+    if (!container) {
+      return;
+    }
+
+    card = document.createElement(tagName);
+    card.className = cardClass + " local-pilot-note-card";
+
+    paragraph = document.createElement("p");
+    if (cardClass !== "site-detail-card") {
+      paragraph.className = "p2";
+    }
+    paragraph.innerHTML = noteHtml;
+
+    card.appendChild(paragraph);
+    container.appendChild(card);
+  }
+
   document.addEventListener("DOMContentLoaded", function() {
     bindFlyingSitesLinks();
     bindSiteCards();
     resetHomePageOnEntry();
     wrapSiteDetailContent();
     enforceSiteDetailFont();
+    ensureLocalPilotNote();
     ensureDisclaimerFooter();
   });
 }());
