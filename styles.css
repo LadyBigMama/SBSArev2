@@ -330,6 +330,30 @@ a {
   font-weight: 700;
 }
 
+.home-calendar-fallback {
+  min-height: 300px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 28px 24px;
+  border-radius: 14px;
+  border: 1px solid rgba(115, 155, 188, 0.24);
+  background:
+    linear-gradient(180deg, rgba(238, 247, 253, 0.98) 0%, rgba(220, 237, 248, 0.98) 100%);
+}
+
+.home-calendar-fallback h3 {
+  margin: 0;
+  color: var(--sky-700);
+  font-size: 1.5rem;
+}
+
+.home-calendar-fallback p {
+  max-width: 48ch;
+  margin: 12px 0 0;
+  color: #24435d;
+}
+
 .home-event-kicker {
   margin: 0 0 10px;
   color: var(--accent-deep);
