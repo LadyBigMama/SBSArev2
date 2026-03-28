@@ -44,11 +44,17 @@
         <p>SBSA community calendar.</p>
       </div>
       <div class="home-calendar-panel">
-        <div class="home-calendar-fallback">
-          <h3>Open SBSA Calendar</h3>
-          <p>Google blocks this private calendar view inside an embedded frame. Open it directly in Google Calendar instead.</p>
-          <a class="btn" href="https://calendar.google.com/calendar/u/2/r" target="_blank" rel="noreferrer noopener">Open Google Calendar</a>
-        </div>
+        <iframe
+          class="home-calendar-frame"
+          src="https://calendar.google.com/calendar/embed?src=flysbsa%40gmail.com&ctz=America%2FLos_Angeles"
+          title="SBSA Calendar"
+          loading="lazy"
+          frameborder="0"
+          scrolling="no"></iframe>
+        <p class="home-calendar-note">
+          If the calendar does not load here, open it directly in
+          <a href="https://calendar.google.com/calendar/u/2?cid=Zmx5c2JzYUBnbWFpbC5jb20" target="_blank" rel="noreferrer noopener">Google Calendar</a>.
+        </p>
       </div>
     </section>
 
