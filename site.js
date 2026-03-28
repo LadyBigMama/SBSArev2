@@ -116,6 +116,16 @@
     });
   }
 
+  function removeHomeLinks() {
+    var links = document.querySelectorAll(".topbar-nav a");
+
+    links.forEach(function(link) {
+      if (link.textContent.trim() === "HOME") {
+        link.remove();
+      }
+    });
+  }
+
   function openCardLink(link, openInNewTab) {
     if (openInNewTab) {
       window.open(link.href, "_blank", "noopener");
@@ -410,6 +420,7 @@
   }
 
   document.addEventListener("DOMContentLoaded", function() {
+    removeHomeLinks();
     bindFlyingSitesLinks();
     bindLoginLinks();
     bindWaiverLinks();
