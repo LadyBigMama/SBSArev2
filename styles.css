@@ -229,8 +229,11 @@ a {
 .home-hero-copy p:last-of-type {
   max-width: 62ch;
   margin-top: 18px;
+  margin-left: auto;
+  margin-right: auto;
   color: #dceffd;
   font-size: 1.08rem;
+  text-align: center;
 }
 
 .home-hero-actions {
