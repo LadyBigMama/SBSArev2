@@ -822,6 +822,28 @@ footer p {
   margin-top: 28px;
 }
 
+.site-last-updated {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-top: 6px;
+  text-align: left;
+}
+
+.site-last-updated-title {
+  margin: 0 0 6px;
+  color: #f0f8ff;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.site-last-updated-body {
+  margin: 0;
+  color: #d9ecfb;
+  font-size: 0.92rem;
+  line-height: 1.4;
+}
+
 .site-disclaimer {
   max-width: 1100px;
   margin: 18px auto 0;

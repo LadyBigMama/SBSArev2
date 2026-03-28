@@ -211,6 +211,38 @@
     footer.appendChild(block);
   }
 
+  function ensureLastUpdatedFooter() {
+    var footer = document.querySelector("footer");
+    var block;
+    var title;
+    var body;
+
+    if (!footer) {
+      footer = document.createElement("footer");
+      footer.className = "site-generated-footer";
+      document.body.appendChild(footer);
+    }
+
+    if (footer.querySelector(".site-last-updated")) {
+      return;
+    }
+
+    block = document.createElement("section");
+    block.className = "site-last-updated";
+
+    title = document.createElement("p");
+    title.className = "site-last-updated-title";
+    title.textContent = "LAST UPDATED";
+
+    body = document.createElement("p");
+    body.className = "site-last-updated-body";
+    body.textContent = "March 28, 2026";
+
+    block.appendChild(title);
+    block.appendChild(body);
+    footer.appendChild(block);
+  }
+
   function wrapSiteDetailContent() {
     var body = document.body;
     var header;
@@ -430,6 +462,7 @@
     enforceSiteDetailFont();
     ensureSpecWindowMedia();
     ensureLocalPilotNote();
+    ensureLastUpdatedFooter();
     ensureDisclaimerFooter();
   });
 }());
