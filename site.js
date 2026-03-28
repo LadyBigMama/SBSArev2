@@ -88,6 +88,20 @@
     });
   }
 
+  function bindWaiverLinks() {
+    var links = document.querySelectorAll(".topbar-nav a");
+    var inSplitDir = window.location.pathname.indexOf("/paragliding-pages-split/") !== -1;
+    var waiverHref = inSplitDir ? "./17-waiver.html" : "./paragliding-pages-split/17-waiver.html";
+
+    links.forEach(function(link) {
+      if (link.textContent.trim() !== "WAIVER") {
+        return;
+      }
+
+      link.setAttribute("href", waiverHref);
+    });
+  }
+
   function openCardLink(link, openInNewTab) {
     if (openInNewTab) {
       window.open(link.href, "_blank", "noopener");
@@ -274,7 +288,7 @@
       return;
     }
 
-    if (file === "03-elings-flight-park.html" || file === "05-visiting-pilots.html" || file === "10-flying-sites-in-santa-barbara.html") {
+    if (file === "03-elings-flight-park.html" || file === "05-visiting-pilots.html" || file === "10-flying-sites-in-santa-barbara.html" || file === "17-waiver.html") {
       return;
     }
 
@@ -350,7 +364,7 @@
       return;
     }
 
-    if (file === "05-visiting-pilots.html" || file === "10-flying-sites-in-santa-barbara.html") {
+    if (file === "05-visiting-pilots.html" || file === "10-flying-sites-in-santa-barbara.html" || file === "17-waiver.html") {
       return;
     }
 
@@ -377,6 +391,7 @@
 
   document.addEventListener("DOMContentLoaded", function() {
     bindFlyingSitesLinks();
+    bindWaiverLinks();
     bindSiteCards();
     resetHomePageOnEntry();
     wrapSiteDetailContent();
